@@ -19,16 +19,47 @@
                 <TabItem.Header>
                     <TextBlock Text="Staff"></TextBlock>
                 </TabItem.Header>
+                <ListView>
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Name"></GridViewColumn>
+                            <GridViewColumn Header="Surname"></GridViewColumn>
+                            <GridViewColumn Header="Phone"></GridViewColumn>
+                            <GridViewColumn Header="Salary"></GridViewColumn>
+                            <GridViewColumn Header="Position"></GridViewColumn>
+                            <GridViewColumn Header="Department"></GridViewColumn>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
             </TabItem>
             <TabItem Name="PositionTab">
                 <TabItem.Header>
                     <TextBlock Text="Position"></TextBlock>
                 </TabItem.Header>
+                <ListView>
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Name"/>
+                            <GridViewColumn Header="Salary"/>
+                            <GridViewColumn Header="Count of staff"/>
+                            <GridViewColumn Header="Max Number"/>
+                            <GridViewColumn Header="Department"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
             </TabItem>
             <TabItem Name="DepatrmentTab">
                 <TabItem.Header>
                     <TextBlock Text="Department"></TextBlock>
                 </TabItem.Header>
+                <ListView>
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Name"/>
+                            <GridViewColumn Width="100" Header="Count of position"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
             </TabItem>
         </TabControl>
 
