@@ -9,5 +9,28 @@
     Width="800"
     Height="450"
     mc:Ignorable="d">
-    <Grid />
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TabControl Grid.Row="0">
+            <TabItem Name="UsersTab">
+                <TabItem.Header>
+                    <TextBlock Text="Staff"></TextBlock>
+                </TabItem.Header>
+            </TabItem>
+            <TabItem Name="PositionTab">
+                <TabItem.Header>
+                    <TextBlock Text="Position"></TextBlock>
+                </TabItem.Header>
+            </TabItem>
+            <TabItem Name="DepatrmentTab">
+                <TabItem.Header>
+                    <TextBlock Text="Department"></TextBlock>
+                </TabItem.Header>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
 </Window>
